@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+}
+.center_header{
+    background-color: black;
+}
+.inline_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.inline_header ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    padding: 15px 0;
+}
+.inline_header .list{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo li a{
+    color: orange;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: none;
+}
+.list li{
+    position: relative;
+}
+
+.list li::before{
+    content: "";
+    position: absolute;
+    width:0%;
+    height: 2px;
+    background-color: orange;
+    right: 0;
+    bottom: 0;
+    transition: 1s;
+}
+.list li:hover::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    right: 0;
+    bottom: 0;
+}
+.search li input{
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;      
+    border-radius: 30px;
+    position: relative;
+}
+.search li{
+    position: relative;
+}
+.search li i{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    color: gold;
+}
+.toggle_icon li a i{
+    color: white;
+    font-size: 20px;
+}
+.toggle_icon{
+    display: none;
+}
+.slider_parent{
+    position: relative;
+    height: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .one{
+      background: url("https://www.teahub.io/photos/full/223-2235089_fitz-roy-mountain-monte-fitz-roy.jpg")center/cover;
+      width: 100%;
+      height: 100vh;
+  }
+  .two{
+      background: url("https://i1.wp.com/wallur.com/wp-content/uploads/2016/12/mountains-background-8.jpg?fit=1920%2C1080")center/cover;
+      width: 100%;
+      height: 100vh;
+  }
+  .three{
+      background: url("https://www.itl.cat/pngfile/big/15-155592_1080p-mountain-wallpaper-585318-rocky-mountains-background-phone.jpg")center/cover;
+      width: 100%;
+      height: 100vh;
+  }
+  .four{
+      background: url("https://searchthisweb.com/wallpaper/moraine-lake_3840x2160_lttcj.jpg")center/cover;
+      width: 100%;
+      height: 100vh;
+  }
+  .five{
+    background: url("https://images6.alphacoders.com/910/910117.jpg")center/cover;
+    width: 100%;
+    height: 100vh;
+}
+.six{
+    background: url("https://images6.alphacoders.com/456/thumb-1920-456496.jpg")center/cover;
+    width: 100%;
+    height: 100vh;
+}
+.title{
+    color: white;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-shadow: 0 0 20px white;
+}
+@media(max-width:700px){
+    .list{
+        display: none !important;
+    }   
+    .toggle_icon{
+        display: block;
+    }
+}
+@media(max-width:630px){
+    .title h1{
+        font-size: 50px;
+    }
+}
+@media(max-width:340px){
+    .title h1{
+        font-size: 30px;
+    }
+}
+@media(max-width:320px){
+    .search{
+        display: none;
+    }
+}
